@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2_trimmed"
+    android:fillViewport="true"
+    android:padding="10dp"
+    tools:context=".Edit_Project_By_Id">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nunito"
+            android:onClick="goBack"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:cornerRadius="10sp"
+            app:strokeColor="#000000"
+            app:strokeWidth="3sp" />
+
+        <TextView
+            android:id="@+id/textProjectTitleEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="250dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textProjectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Project Title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/input_field"
+            android:ems="10"
+            android:hint="@string/project_title"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="220dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/input_field"
+            android:gravity="start"
+            android:hint="Description"
+            android:inputType="textMultiLine|text"
+            android:lines="3"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Year"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editYear"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="290dp"
+            android:background="@drawable/input_field"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textViewPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Thumbnail Image"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nunito"
+            android:text="Select Image"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:cornerRadius="10sp"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:strokeColor="#000000"
+            app:strokeWidth="3sp" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/upload_button"
+            android:fontFamily="@font/nunito"
+            android:text="@string/upload_image"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:cornerRadius="10sp"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:strokeColor="#000000"
+            app:strokeWidth="3sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnProjectUpdate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nunito"
+        android:text="@string/update_project"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:cornerRadius="10sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp" />
+</RelativeLayout>

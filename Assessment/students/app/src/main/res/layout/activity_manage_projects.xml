@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2_trimmed"
+    tools:context=".Manage_Projects">
+
+    <TextView
+        android:id="@+id/subheadingTextView"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Manage Projects"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/nunito"
+        android:onClick="btnGoEdit"
+        android:text="@string/edit_projects"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/nunito"
+        android:onClick="btnGoCreate"
+        android:text="@string/create_new_project"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

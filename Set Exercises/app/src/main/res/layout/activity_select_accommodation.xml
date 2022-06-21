@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Select_Accommodation">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BarnCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="404dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barn" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Barn - £n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Barn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Holds up to 8, Self-Catered"
+            android:textColor="@color/white"
+            android:translationY="115sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/HutCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="244dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bedroom3Card"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.75"
+            app:srcCompat="@drawable/hut" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Shepherd's Hut - £n"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Hut_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Double Room, Can be Catered"
+            android:textColor="@color/white"
+            android:translationY="115sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="616dp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="@font/montserrat"
+        android:onClick="SubmitAccomm"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:iconPadding="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="3sp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="111dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="@font/montserrat"
+        android:onClick="previous"
+        android:text="Go back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:iconPadding="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="3sp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="111dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="@font/montserrat"
+        android:onClick="goHome"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:iconPadding="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="3sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Bedroom1Card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/Bedroom2Card"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bedroom1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:text="Bedroom 1 - £n"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Bedroom1_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Double Room, B&amp;B Included"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:translationY="115dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Bedroom2Card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bedroom1Card"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.8"
+            app:srcCompat="@drawable/bedroom2" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Bedroom 2 - £n"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Bedroom2_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Double Room, B&amp;B Included"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:translationY="115dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Bedroom3Card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="244dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HutCard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.8"
+            app:srcCompat="@drawable/bedroom3" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Bedroom 3 - £n"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textBoxBackgroundColor"
+            android:fontFamily="@font/montserrat"
+            android:text="Double Room, B&amp;B Included"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:translationY="115dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/textBoxBackgroundColor"
+        android:fontFamily="@font/montserrat"
+        android:text="Select Room"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

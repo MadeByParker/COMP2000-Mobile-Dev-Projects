@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">students</string>
+    <string name="get_started">Get Started</string>
+    <string name="students_app">Students App</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_title"><u>Sign In</u></string>
+    <string name="register">Register</string>
+    <!-- Strings related to login -->
+    <string name="title_activity_register"><u>Register</u></string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username:</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="student_id">Student ID</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="title_reset_password"><u>Reset Password</u></string>
+    <string name="create_new_project">Create New Project</string>
+    <string name="create_new_project_title"><u>Create New Project</u></string>
+    <string name="description">Description</string>
+    <string name="year">Year</string>
+    <string name="thumbnail_image">Thumbnail Image</string>
+    <string name="poster_image">Poster Image</string>
+    <string name="create_project">Create Project</string>
+    <string name="name">Name</string>
+    <string name="student_project_management_page">Student Project Management Page</string>
+    <string name="edit_projects">Edit Projects</string>
+    <string name="create_new_projects">Create New Projects</string>
+    <string name="todo">TODO</string>
+    <string name="poster_picture">Poster Picture</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_student_id">Enter Student ID</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="back">Back</string>
+    <string name="email">Email</string>
+    <string name="project_title">Project Title</string>
+    <string name="update_project">Update Project</string>
+    <string name="upload_image">Upload Image</string>
+</resources>

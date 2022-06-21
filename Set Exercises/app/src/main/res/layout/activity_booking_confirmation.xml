@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Booking_Confirmation">
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="330dp"
+      android:layout_height="334dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/montserrat"
+      android:text="@string/thank_you_for_booking_your_holiday_with_farmbnb"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="48sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.493"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/button9"
+      android:layout_width="150dp"
+      android:layout_height="84dp"
+      android:layout_marginTop="424dp"
+      android:backgroundTint="@color/button_color"
+      android:fontFamily="@font/montserrat"
+      android:onClick="returnHome"
+      android:text="Finish Booking"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:strokeWidth="3sp" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="240dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.492"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2_trimmed"
+    android:fillViewport="true"
+    android:padding="10dp"
+    tools:context=".Login">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <TextView
+            android:id="@+id/textProject4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/sign_in_title"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nunito"
+            android:onClick="goBack"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:cornerRadius="10sp"
+            app:strokeColor="#000000"
+            app:strokeWidth="3sp" />
+
+        <TextView
+        android:id="@+id/textStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/enter_student_id"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textPassword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/enter_password"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etStudentID1"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="@string/enter_student_id"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etSignInPassword"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp"
+        android:layout_marginBottom="25sp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnProjectUpdate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nunito"
+        android:onClick="btnLogin"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:cornerRadius="10sp"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp" />
+
+    <Button
+        android:id="@+id/btnRegister2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nunito"
+        android:onClick="btnRegister"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:cornerRadius="10sp"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp" />
+
+    <Button
+        android:id="@+id/Forgot_Password"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="415dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nunito"
+        android:onClick="btnResetPassword"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:cornerRadius="10sp"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp" />
+</RelativeLayout>

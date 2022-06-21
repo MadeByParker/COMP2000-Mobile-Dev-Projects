@@ -1,0 +1,152 @@
+swagger: "2.0"
+info:
+  description: "This is an API that provides the ability to enter student projects using the end points below."
+  version: "1.0.0"
+  title: "COMP2000 Showcase"
+  termsOfService: "http://web.socem.plymouth.ac.uk/shirley/"
+  contact:
+    email: "shirley.atkinson@plymouth.ac.uk"
+  license:
+    name: "CC BY-NC-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+host: "web.socem.plymouth.ac.uk"
+basePath: "/COMP2000/api/"
+tags:
+- name: "students"
+  description: "All about Student Projects"
+schemes:
+- "https"
+- "http"
+paths:
+  /students:
+    post:
+      tags:
+      - "students"
+      summary: "Create a new Student Project"
+      description: "New Student Project to be inserted into the system"
+      operationId: "create"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Created Student Project object"
+        required: true
+        schema:
+          $ref: "#/definitions/students"
+      responses:
+        "201":
+          description: "successful operation, returns blank"
+        "404":
+          description: "Not Found"
+    get:
+      tags:
+      - "students"
+      summary: "Provides view of all student projects"
+      description: ""
+      operationId: "getStudentProjects"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          
+  /students/{id}:
+    put:
+      tags:
+      - "students"
+      summary: "Update an existing Student Project"
+      description: "Can update title of a Student project but not the code"
+      operationId: "updateProgramme"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of Student to be updated"
+        required: true
+        type: "integer"
+      - in: "body"
+        name: "body"
+        description: "The details for Student Project"
+        required: true
+        schema:
+          $ref: "#/definitions/students"
+      responses:
+        "204":
+          description: "Success"
+        "404":
+          description: "Not Found"
+    delete:
+      tags:
+      - "students"
+      summary: "Delete student project"
+      description: "This can only be done by the logged in user."
+      operationId: "deletestudentproject"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Student Project to be deleted"
+        required: true
+        type: "integer"
+      responses:
+        "204":
+          description: "Success"
+
+  /students/{id}/image:
+    post:
+      summary: "Post an image file for an existing student"
+      description: "Can update Student project with an image file submitted via form-data"
+      consumes:
+      - "multipart/form-data"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of Student to be updated"
+        required: true
+        type: "integer"
+      responses:
+        "201":
+          description: "successful operation, returns blank"   
+        
+        
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  students:
+    type: "object"
+    properties:
+      StudentID:
+        type: "integer"
+      Title:
+        type: "string"
+      Description:
+        type: "string"
+      Year:
+        type: "integer"
+      First_Name:
+        type: "string"
+      Second_Name:
+        type: "string"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
