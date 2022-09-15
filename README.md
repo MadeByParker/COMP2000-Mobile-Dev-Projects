@@ -4,6 +4,8 @@ This is the gitub repository in use for the COMP2000 Software Engineering 2 Modu
 
 ## Set Exercises :page_facing_up:
 
+Results: 55/100
+
 The project is in the Set Exercises folder, download neccessary files to run.
 
 #### Scenario Used: FarmBnB Scenario
@@ -23,6 +25,8 @@ For personal development I used the Emulator: Pixel XL API 30 AVM R version
 The signed forms and the template are in the Consent Forms folder
 
 ## Assessment - Part 2:
+
+Results: 61/100
 
 #### Scenario
 
